@@ -41,12 +41,12 @@ const deleteBtn = li.querySelector(".delete-btn");
 checkbox.addEventListener("click", function () {
     if (checkbox.checked) {
         taskSpan.classList.add("line-through", "text-gray-400", "opacity-60");
-        li.classList.add("completed"); // ✅ important for counting
+        li.classList.add("completed"); // 
     } else {
         taskSpan.classList.remove("line-through", "text-gray-400", "opacity-60");
-        li.classList.remove("completed"); // ✅ important for counting
+        li.classList.remove("completed"); //
     }
-    updateCounters(); // ✅ works now because .completed is on <li>
+    updateCounters(); // 
 });
 
 
