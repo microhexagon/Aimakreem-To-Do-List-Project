@@ -36,7 +36,7 @@ function addOrUpdateTask() {
 
     } else {
       // Add new task
-    const li = document.createElement("ul");
+    const li = document.createElement("li");
     li.className = "flex justify-between items-center bg-[#2e3b4e] m-4 p-6 rounded-lg outline outline-offset-2 outline-blue-300";
     li.innerHTML = `
         <label class="text-[#EAEFEF] text-3xl flex items-center gap-4">
