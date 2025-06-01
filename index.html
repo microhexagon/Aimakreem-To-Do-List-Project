@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do-List</title>
+</head>
+<body id="body" class="bg-[#B8CFCE] flex items-center justify-center min-h-screen">
+    <div id="To-Do-List" class="w-full sm:w-[90%] md:w-[70%] lg:w-[45%] bg-[#333446] rounded-xl p-4  shadow-[0_0_30px_5px_rgba(255,255,255,0.2)] ">  <!-- maindiv -->
+        <div class="flex justify-center items-center text-5xl text-[#EAEFEF] font-bold">To-Do-List</div>
+        <div class="flex justify-center items-center m-4">
+            <input id="input-box" type="text " class="w-1/2 h-16 p-4 text-4xl rounded-lg outline outline-offset-2 outline-blue-300" placeholder="Add Task">
+            <button  onclick="addTask()" id="input-button" class="w-28 h-14 m-4 rounded-lg bg-[#7F8CAA] text-3xl  text-[#EAEFEF] font-bold hover:bg-[#B8CFCE] transition duration-300 ">Add</button>
+        </div>
+        <div class="flex justify-center items-center text-3xl text-[#EAEFEF] font-bold">Task List</div>
+        <ul id="list-container"></ul>  
+        
+        <hr />
+<!-- task list counter -->
+<div class="counter-container ">
+    <div id="task-counters" 
+        class="text-white m-4 text-xl flex justify-center ">
+        Completed: <span id="completed-counter">0</span> | Uncompleted:
+        <span id="uncompleted-counter">0</span>
+    </div>
+</div>
+
+    </div>  <!-- maindiv -->
+    <script src="script.js"></script>
+</body>
+</html>
