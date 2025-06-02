@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>To-Do-List</title>
 </head>
-<body id="body" class="bg-[#B8CFCE] flex items-center justify-center min-h-screen">
+<body id="body" class="bg-[#B8CFCE] flex items-center justify-center min-h-screen" style="background-image: url('assets/images/img.jpeg');">
     <div id="To-Do-List" class="w-full sm:w-[90%] md:w-[70%] lg:w-[45%] bg-[#333446] rounded-xl p-4  shadow-[0_0_30px_5px_rgba(255,255,255,0.2)] ">  <!-- maindiv -->
-        <div class="flex justify-center items-center text-5xl text-[#EAEFEF] font-bold">To-Do-List</div>
+        <div class="flex justify-center items-center text-5xl text-[#EAEFEF] font-bold"> <span class="mr-4 text-red-500"><i class="fa-solid fa-list-check"></i></span>
+            To-Do-List
+        </div>
         <div class="flex justify-center items-center m-4">
             <input id="input-box" type="text " class="w-1/2 h-16 p-4 text-4xl rounded-lg outline outline-offset-2 outline-blue-300" placeholder="Add Task">
             <button  onclick="addTask()" id="input-button" class="w-28 h-14 m-4 rounded-lg bg-[#7F8CAA] text-3xl  text-[#EAEFEF] font-bold hover:bg-[#B8CFCE] transition duration-300 ">Add</button>
